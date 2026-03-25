@@ -4,7 +4,7 @@
 maintainer="Celeste <cielesti@protonmail.com>"
 pkgname=perl-cpan-requirements-dynamic
 pkgver=0.002
-pkgrel=${pkgrel:-0}
+pkgrel=0
 #_pkgreal is used by apkbuild-cpan to find modules at MetaCpan
 _pkgreal=CPAN-Requirements-Dynamic
 pkgdesc="Dynamic prerequisites in CPAN metadata files"
@@ -39,7 +39,6 @@ package() {
 }
 
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 595b1e367eeeca94fd611f23f37217b8b46d50b829a6c4083c1350ecfb82d1adaf492e63dc5582feab310d67cfaf3f736b17b2eecafeb6c1d9bddeebe7205205  CPAN-Requirements-Dynamic-0.002.tar.gz
 "
